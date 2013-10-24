@@ -7,8 +7,8 @@ extern void kmedoids_wrapper(float *h_data_in, int *h_medoids_index_in, int *h_a
 int main(int argc, char **argv)
 {
     int nMedoids = 4;
-    int nData = 8;
-    int nDim = 2;
+    int nData = 16;
+    int nDim = 1;
 
     int medoids_in[nMedoids];
 

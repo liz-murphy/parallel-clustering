@@ -10,7 +10,7 @@ find_package(OPENCV2 REQUIRED)
 
 set (EXECUTABLE_OUTPUT_PATH "${CMAKE_SOURCE_DIR}/bin/")
 
-set(CUDA_NVCC_FLAGS "-arch=sm_30" CACHE STRING "nvcc flags" FORCE)
+set(CUDA_NVCC_FLAGS "-arch=sm_30 --pre-include ${CMAKE_SOURCE_DIR}/compatibility.h" CACHE STRING "nvcc flags" FORCE)
 
 set(CUDA_VERBOSE_BUILD ON CACHE BOOL "nvcc verbose" FORCE)
 set(LIB_TYPE static)
