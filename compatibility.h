@@ -1,0 +1,7 @@
+#ifndef COMPATIBILITY_H
+#define COMPATIBILITY_H
+
+#undef _GLIBCXX_ATOMIC_BUILTINS
+#undef _GLIBCXX_USE_INT128
+
+#endif
